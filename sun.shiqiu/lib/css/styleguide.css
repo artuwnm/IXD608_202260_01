@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Nanum+Pen+Script&family=Pangolin&family=Plus+Jakarta+Sans:wght@600&family=Poppins:wght@500&family=Roboto+Serif:opsz,wght@8..144,100&family=Roboto:ital,wght@0,900;1,100&family=Square+Peg&family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,900;1,700&family=Montserrat:wght@600;700&family=Nanum+Pen+Script&family=Pangolin&family=Plus+Jakarta+Sans:wght@600&family=Poppins:wght@500&family=Roboto+Serif:opsz,wght@8..144,100&family=Roboto:ital,wght@0,900;1,100&family=Square+Peg&family=Yellowtail&display=swap');
 /* CSS RESET */
 
 *, *::after, *::before {
@@ -9,10 +11,14 @@
 	--color-neutral-medium: #999;
 	--color-neutral-dark:#555;
 
+	--color-main-light: lightblue;
+	--color-main-medium: blue;
+	--color-main-dark:darkblue;
+
 	--color-black: #000;
 	--color-white: #fff;
 
-	--header-height: 3rem;
+	--header-height: 4rem;
 	--spacing: 1rem;
 
 	--font-serif: Georgia,"Times New Roman",serif;
@@ -28,8 +34,12 @@ body {
 }
 
 
+h2 {
+	font-family: 'Merriweather', serif;
+	font-size: 3em;
+ };
+
 h1,
-h2,
 h3,
 h4,
 h5,
@@ -47,9 +57,30 @@ a:hover {
 	text-decoration: underline;
 }
 
+.p1 {
+	margin-block-start: 1em;
+    margin-block-end: 3em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
 
+.p2 {
+	margin-block-start: 3em;
+    margin-block-end: 5em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.p3 {
+	margin-block-start: 2em;
+    margin-block-end: 6em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
 
 /* LAYOUT CLASSES */
+
+
 
 .container {
 	max-width: 800px;
@@ -70,6 +101,15 @@ a:hover {
 .flex-justify-center {justify-content: center;}
 
 
+/*Small Classes*/
+.media-image {
+	max-width: 100%;
+	vertical-align: text-bottom;
+}
+
+
+
+
 /* COMPONENT CLASS */
 
 .nav ul {
@@ -79,16 +119,96 @@ a:hover {
 	padding-left: 0;
 }
 
+.nav a{
+	display: block;
+	padding: 0.2em 0.5em;
+}
+
+.nav a:hover {
+	background-color: var(--color-main-meidum);
+	color: var(--color-white);
+	text-decoration: none;
+}
+
+.nav .active a {
+	background-color: var(--color-main-light);
+	color: inherit;
+}
+
+.nav-material ul,
+.nav-crumbs ul,
+.nav-pills ul,
+.nav-stretch ul,
+.nav-flex ul{
+	display: flex;
+}
+
+.nav-stretch li,
+.nav-stretch li{
+	flex: 1 1 auto;
+	text-align: center;
+}
+
+.nav-pills a{
+	border-radius: 2em;
+	padding: 0.5em 1em;
+}
+
+
+.nav-crumbs a{
+	display: inline-block;
+}
+
+.nav-crumbs .active a,
+.nav-crumbs a:hover{
+	background-color: transparent;
+	color: inherit;
+	text-decoration: underline;
+}
+
+.nav-crumbs li:not(:first-child)::before{
+	content: '/';
+}
+
+.nav-material a{
+	padding: 0.5em 1em;
+	position: relative;
+}
+.nav-material .active a{
+	background-color: transparent;
+	color: inherit;
+}
+.nav-material a:hover{
+	background-color: var(--color-neutral-light);
+	color: inherit;
+}
+.nav-material a::after{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 0;
+	background-color: var(--color-main-medium);
+	transition: all 0.3s;
+}
+
+.nav-material .active a::after{
+	height: 4px;
+}
+
+
+
 .navbar {
-	background-color: var(--color-neutral-dark);
+	background-color: #a0a7b9;
 	color: var(--color-white);
 	line-height: var(--header-height);
 }
 
 .navbar h1 {
-	font-size: 1em;
+	font-size: 1.6em;
 	margin: 0;
-	font-family:var(--font-sans);
+	font-family:'Yellowtail', cursive;
 }
 
 .navbar a {
@@ -127,7 +247,6 @@ a:hover {
 
 
 
-
 .view-window{
 	height: 50vh;
 	position: relative;
@@ -136,3 +255,59 @@ a:hover {
 	background-attachment: center;
 	background-attachment: fixed;
 }
+
+/* TABLES */
+.table {
+	wdith: 100%;
+	border-collapse: collapse;
+}
+
+.table th,
+.table td{
+	font-align: left;
+	padding: 0.2em 0.5em;
+}
+
+.table.striped tbody tr:nth-child(odd) {
+	background-color: var(--color-neutral-light);
+}
+
+.table.lined.all th:not(:first-child),
+.table.lined.all td:not(:first-child),
+.table.lined.vertical th:not(:first-child),
+.table.lined.vertical td:not(:first-child){
+	border-left: 1px solid var(--color-neutral-medium);
+}
+
+.table.lined.all tbody tr,
+.table.lined.horizontal tbody tr {
+	border-top: 1px solid var(--color-neutral-medium);
+}
+
+.table.lined.all,
+.table.lined.border {
+	border: 1px solid var(--color-neutral-medium);
+}
+
+
+/*Figure*/
+.figure{
+	margin: 0;
+	background-color: var(--color-white);
+}
+.figure img{
+	width: 100%;
+	vertical-align: text-bottom;
+}
+.figure.figcaption {
+	padding: 1em;
+}
+
+
+
+
+
+
+
+
+
