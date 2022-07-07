@@ -1,9 +1,10 @@
 
 :root {
-	--color-offwhite: #c3cbd8;
+	--color-offwhite: #f4f4f4;
 }
 body {
 	background-color:var(--color-offwhite);
+	padding-bottom: 4em;
 }
 
 @media(max-width: 800px){
