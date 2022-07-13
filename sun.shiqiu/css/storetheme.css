@@ -1,19 +1,20 @@
 
 :root {
-	--color-offwhite: #f4f4f4;
+	--color-offwhite: #f9f9f9;
 }
+
 body {
-	background-color:var(--color-offwhite);
 	padding-bottom: 4em;
 }
 
 @media(max-width: 800px){
 	.container {
-		padding-left: 1em;
+		padding-left: 1.em;
 		padding-right: 1em;
     }
    .navbar h1 {
    	padding-left: 0.5em;
+   
    }
 }
 

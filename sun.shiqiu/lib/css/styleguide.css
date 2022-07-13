@@ -1,5 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Nanum+Pen+Script&family=Pangolin&family=Plus+Jakarta+Sans:wght@600&family=Poppins:wght@500&family=Roboto+Serif:opsz,wght@8..144,100&family=Roboto:ital,wght@0,900;1,100&family=Square+Peg&family=Yellowtail&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,900;1,700&family=Montserrat:wght@600;700&family=Nanum+Pen+Script&family=Pangolin&family=Plus+Jakarta+Sans:wght@600&family=Poppins:wght@500&family=Roboto+Serif:opsz,wght@8..144,100&family=Roboto:ital,wght@0,900;1,100&family=Square+Peg&family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Merriweather:ital,wght@0,300;0,900;1,700&family=Montserrat:wght@600;700&family=Nanum+Pen+Script&family=Pangolin&family=Plus+Jakarta+Sans:wght@600&family=Poppins:wght@500&family=Roboto+Serif:opsz,wght@8..144,100&family=Roboto:ital,wght@0,900;1,100&family=Square+Peg&family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Merriweather:ital,wght@0,300;0,900;1,700&family=Montserrat:wght@600;700&family=Mukta&family=Nanum+Pen+Script&family=Pangolin&family=Plus+Jakarta+Sans:wght@600&family=Poppins:wght@500&family=Roboto+Serif:opsz,wght@8..144,100&family=Roboto:ital,wght@0,900;1,100&family=Square+Peg&family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lora:ital,wght@1,500&family=Merriweather:ital,wght@0,300;0,900;1,400;1,700&family=Montserrat:wght@600;700&family=Mukta:wght@300;400&family=Nanum+Pen+Script&family=Pangolin&family=Plus+Jakarta+Sans:wght@600&family=Poppins:wght@500&family=Roboto+Serif:opsz,wght@8..144,100&family=Roboto:ital,wght@0,900;1,100&family=Square+Peg&family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lora:ital,wght@1,500&family=Merriweather:ital,wght@0,300;0,900;1,400;1,700&family=Montserrat:wght@600;700&family=Mukta:wght@300;400&family=Nanum+Pen+Script&family=Pangolin&family=Plus+Jakarta+Sans:wght@600&family=Poppins:wght@500&family=Roboto+Serif:opsz,wght@8..144,100&family=Roboto:ital,wght@0,900;1,100&family=Source+Sans+Pro:wght@300;400&family=Square+Peg&family=Yellowtail&display=swap');
 /* CSS RESET */
 
 *, *::after, *::before {
@@ -28,14 +30,19 @@
 
 
 body {
+	
 	margin: 0;
 	font-size: 100%;
-	font-family: var(--font-sans);
 }
 
 
-h1,
-h2,
+h2 {
+	font-family: 'Merriweather', serif;
+	font-size: 3em;
+	margin-left: 2.5em;
+}
+
+
 h3,
 h4,
 h5,
@@ -53,33 +60,32 @@ a:hover {
 	text-decoration: underline;
 }
 
-/*.p1 {
-	margin-block-start: 1em;
-    margin-block-end: 3em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
-
-.p2 {
-	margin-block-start: 3em;
-    margin-block-end: 5em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+.p1,.p2 {
+	margin-block-start: -1em;
+    margin-block-end: 2.5em;
+    margin-left: 7em;
+    margin-right: 8em;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.1em;
+    line-height: 28px;
 }
 
 .p3 {
-	margin-block-start: 2em;
-    margin-block-end: 6em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}*/
+	margin-block-start: 3em;
+    margin-block-end: 2em;
+    margin-left: 7em;
+    margin-right: 8em;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.1em;
+    line-height: 28px;
+}
 
 /* LAYOUT CLASSES */
 
 
 
 .container {
-	max-width: 1400px;
+	max-width: 1350px;
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -110,12 +116,16 @@ a:hover {
 
 
 /* COMPONENT CLASS */
-
+.storename {
+	margin-left: 2em;
+}
 .nav ul {
 	list-style-type: none;
 	margin-top: 0;
 	margin-bottom: 0;
 	padding-left: 0;
+	font-size: 1.3em;
+	font-family: 'Mukta', sans-serif;
 }
 
 .nav a{
@@ -124,14 +134,12 @@ a:hover {
 }
 
 .nav a:hover {
-	background-color: var(--color-main-meidum);
-	color: var(--color-white);
+	color: #5aa9e6;
 	text-decoration: none;
 }
 
 .nav .active a {
-	background-color: var(--color-main-light);
-	color: inherit;
+	color: #5aa9e6;
 }
 
 .nav-material ul,
@@ -146,6 +154,7 @@ a:hover {
 .nav-stretch li{
 	flex: 1 1 auto;
 	text-align: center;
+	font-family: ;
 }
 
 .nav-pills a{
@@ -199,15 +208,15 @@ a:hover {
 
 
 .navbar {
-	background-color: var(--color-neutral-dark);
-	color: var(--color-white);
-	line-height: var(--header-height);
+	background-color: #a2d2ff;
+    color: var(--color-white);
+    line-height: 4em;
 }
 
 .navbar h1 {
-	font-size: 1em;
+	font-size: 1.5em;
 	margin: 0;
-	font-family:var(--font-sans);
+	font-family:'Kaushan Script', cursive;
 }
 
 .navbar a {
