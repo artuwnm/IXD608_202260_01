@@ -1,0 +1,33 @@
+[
+
+	{
+		"name":"Shiqiu Sun",
+		"type":"Student",
+		"email":"nataliesun1995@gmail.com",
+		"classes":[608,617,820]
+	},
+	{
+		"name":"Phoebe",
+		"type":"Student",
+		"email":"nataliesun1995@gmail.com",
+		"classes":[608,617,820]
+	},
+	{
+		"name":"Joey",
+		"type":"Student",
+		"email":"nataliesun1995@gmail.com",
+		"classes":[608,617,820]
+	},
+	{
+		"name":"Chandler",
+		"type":"Student",
+		"email":"nataliesun1995@gmail.com",
+		"classes":[608,617,820]
+	},
+	{
+		"name":"Monica",
+		"type":"Student",
+		"email":"nataliesun1995@gmail.com",
+		"classes":[608,617,820]
+	}
+]

@@ -1,4 +1,6 @@
-<meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width">
+
+    <base href="http://shiqiusun.com/aau/IXD608/sun.shiqiu/">
 
 	<link rel="stylesheet" href="lib/css/styleguide.css">
     <link rel="stylesheet" href="lib/css/gridsystem.css">
