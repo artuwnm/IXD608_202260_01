@@ -102,6 +102,15 @@ a:hover {
 .flex-align-center {align-items: center;}
 .flex-justify-center {justify-content: center;}
 
+.display-flex-show {
+	display: flex;
+	align-items: center;
+	align-content: space-between;
+	flex-direction: column;
+}
+
+
+
 
 /*Small Classes*/
 .media-image {
@@ -226,17 +235,18 @@ a:hover {
 
 /* CARD */
 .card {
-	background-color: var(--color-white);
+	background-color: var(--color-main-light);
 	margin-top: 1em;
 	margin-bottom: 1em;
 	padding: 1em;
-
 	overflow: hidden;
 	position: relative;
 }
 .card.soft{
+	background-color: #f1faee;
 	border-radius: 0.5em;
-	box-shadow: 0 0 10px rgba(0,0,0,1);
+	padding-bottom: 2px;
+
 }
 .card.hard{
 	border-radius: 0.2em;
@@ -323,7 +333,7 @@ a:hover {
 .form-input,
 .form-item {
 	display: inline-block;
-	background-color: transparent;
+	 background-color: azure;
     border-width: 0;
     font: inherit;
     -webkit-appearance: none;
@@ -341,7 +351,7 @@ a:hover {
 }
 
 .form-label {
-	font-size: 0.8em;
+	font-size: 1.2em;
 	color: ver(--color-neutral-meidum);
 	display: block;
 	width: 100%;
@@ -351,11 +361,15 @@ a:hover {
 
 /*Button*/
 .form-button {
-	background-color: var(--color-neutral-light);
+	background-color: #a2d2ff;
     border-radius: 0.2em;
     cursor: pointer;
     text-align: center;
     padding: 0.5em, 1em;
+ }
+
+ .form-button.inline {
+ 	width: 60px;
  }
 
 .form-button:hover {
@@ -428,5 +442,12 @@ a:hover {
 	transform: translateX(1em);
 }
 
+.card-section~.card-section {
+   border-top: 2px solid var(--color-main-light);
+}
+
+.card-section {
+   padding :2em;
+}
 
 

@@ -32,7 +32,21 @@ body {
 	border-radius: 0.5em;
 	box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 	overflow: hidden;
+	transition: all 0.3s;
 }
+.figure.product:hover {
+	box-shadow: 0 2px 15px rgba(0,0,0,0.2);
+}
+
+ .product.figure img {
+    height: 100%;
+    object-fit: contain;
+ }
+
+.productlist a{
+	text-decoration: none;
+}
+
 
 .product-overlay{
 	position: relative;
@@ -86,6 +100,41 @@ body {
 		transform: none;
 		padding: 0;
 	}
+}
+
+.images-main {
+	width: 100%;
+	height: 80vh;
+	object-fit: contain;
+}
+.images-thumbs img {
+	width: 8em;
+	object-fit: contain;
+}
+
+.images-thumbs {
+	position:relative ;
+	top: -80px;
+}
+
+.images-thumbs-cart img {
+	width: 8em;
+	object-fit: contain;
+}
+
+.images-thumbs-cart {
+	position:relative ;
+	top: 2px;
+}
+
+
+
+
+span.badge:not(:empty)::after {
+    content: ')';
+}
+span.badge:not(:empty)::before {
+    content: '(';
 }
 
 

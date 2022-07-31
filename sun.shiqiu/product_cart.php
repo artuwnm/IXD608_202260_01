@@ -31,26 +31,12 @@ $cart_items = getCartItems();
 			</div>
 			<div class="col-xs-12 col-md-5">
 				<div class="card soft flat">
-					<div class="card-section display-flex">
-						<div class="flex-stretch"><strong>Sub Total</strong></div>
-						<div class="flex-none">&dollar;120</div>
-					</div>
-					<div class="card-section display-flex">
-						<div class="flex-stretch"><strong>Taxes</strong></div>
-						<div class="flex-none">&dollar;12.12</div>
-					</div>
-					<div class="card-section display-flex">
-						<div class="flex-stretch"><strong>Total</strong></div>
-						<div class="flex-none">&dollar;132.12</div>
-					</div>
-					<div class="card-section">
-						<a href="product_checkout.php" class="form-button">Checkout</a>
-					</div>
+						 <?= cartTotals() ?>
 				</div>
 			</div>
 		</div>
-
 	</div>
+
 	
 </body>
 </html>

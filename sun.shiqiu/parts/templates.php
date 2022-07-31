@@ -32,7 +32,7 @@ function cartListTemplate($r,$o){
 	$selectamount = selectAmount($o->amount,10);
 return $r.<<<HTML
 <div class="display-flex">
-    <div class="flex-none images-thumbs">
+    <div class="flex-none images-thumbs-cart">
         <img src="$o->images">
     </div>
 
