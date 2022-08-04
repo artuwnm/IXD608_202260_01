@@ -1,3 +1,8 @@
+<?php
+include_once "lib/php/functions.php";
+include_once "parts/templates.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -145,5 +150,11 @@
       			</div>
       		</article>
       	</div>
+      	<div class="container">
+		<h2>Popular Shorts</h2>
+		<?php recommendedCategory("shorts"); ?>
+		<h2>Popular Skirts</h2>
+		<?php recommendedCategory("skirt"); ?>
+	</div>
 </body>
 </html>

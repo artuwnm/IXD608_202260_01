@@ -21,10 +21,30 @@ function MYSQLIAuth() {
 	];
 }
 
+
+function PDOAuth() {
+      return [
+            "mysql:host=localhost;dbname=shiqiusun_IXD608_database",
+            "shiqiusun_IXD608_database",
+            "hWDCs23wXtjGGzL",
+            [PDO::MYSQL_ATTR_INIT_COMMAND=>"SET NAMES utf8"]      
+      ];
+}
+
+
 function makeConn(){
       $conn = new mysqli(...MYSQLIAuth());
       if($conn->connect_errno) die($conn->connect_error);
       $conn->set_charset('utf8');
+      return $conn;
+}
+
+function makePDOConn() {
+      try {
+            $conn = new PDO(...PDOAuth());
+      } catch(PDOException $e) {
+            die($e->getMessage());
+      }
       return $conn;
 }
 
