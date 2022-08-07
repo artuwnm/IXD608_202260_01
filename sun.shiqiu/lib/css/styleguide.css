@@ -43,7 +43,13 @@ h2 {
 }
 
 
-h3,
+h3 {
+	font-family: 'Merriweather', serif;
+	font-size: 3em;
+	margin-left: 0.5em;
+}
+
+
 h4,
 h5,
 h6 {
@@ -108,6 +114,8 @@ a:hover {
 	align-content: space-between;
 	flex-direction: column;
 }
+.flex-column { flex-direction: column; }
+.flex-wrap {flex-wrap: wrap; }
 
 
 
@@ -232,6 +240,10 @@ a:hover {
 	padding: 0 1em;
 }
 
+.flush>.navbar{
+	margin-bottom: 0;
+}
+
 
 /* CARD */
 .card {
@@ -246,6 +258,13 @@ a:hover {
 	background-color: #f1faee;
 	border-radius: 0.5em;
 	padding-bottom: 2px;
+
+}
+.card.soft.table{
+	background-color: #f1faee;
+	border-radius: 0.5em;
+	padding-bottom: 2px;
+	width: 500px;
 
 }
 .card.hard{
@@ -449,5 +468,8 @@ a:hover {
 .card-section {
    padding :2em;
 }
+
+
+
 
 

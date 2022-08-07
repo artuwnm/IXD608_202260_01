@@ -49,6 +49,7 @@
 
 					<div class="card-section">
 						<h3 class="product-name"><?=$product->name?></h3>
+						<div class="product-category">&dollar;<?=$product->category ?></div>
 						<div class="product-price">&dollar;<?=$product->price ?></div>
 					</div>
 				

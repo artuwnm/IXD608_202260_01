@@ -2,6 +2,7 @@
 include_once "lib/php/functions.php";
 include_once "parts/templates.php";
 
+$cart = getCart();
 // $cart = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `id` IN(4,7,10)");
 
 $cart_items = getCartItems();
@@ -23,6 +24,11 @@ $cart_items = getCartItems();
 
 	<div class="container">
 		<h2>In your Cart</h2>
+
+		<?php
+            if(count($cart)) {
+        ?>
+
 		<div class="grid gap">
 			<div class="col-xs-12 col-md-7">
 				<div class="card soft">
@@ -35,6 +41,20 @@ $cart_items = getCartItems();
 				</div>
 			</div>
 		</div>
+	</div>
+
+		 <?php
+                } else {
+                        ?>
+                        <div class="card soft">
+                                <p>No items in cart</p>
+                        </div>
+       
+                                <h3>Other Recommendations</h3>
+                                <?php recommendedAnything(3); ?>
+                        <?php
+                }
+                ?>
 	</div>
 
 	

@@ -1,6 +1,8 @@
 <?php
 
 include_once "lib/php/functions.php";
+include_once "parts/templates.php";
+$cart = getCartItems();
 
 ?>	
 
@@ -10,6 +12,8 @@ include_once "lib/php/functions.php";
 <head>
 	<meta charset="UTF-8">
 	<title>Checkout Page</title>
+	<link rel="stylesheet" href="lib/css/styleguide.css">
+    <link rel="stylesheet" href="css/storetheme.css">
 
 	<?php include "parts/meta.php"; ?>
 </head>
@@ -18,12 +22,32 @@ include_once "lib/php/functions.php";
 
 	<?php include "parts/navbar.php"; ?>
 
+      <div class="container">
+		<div class="grid gap">
+			<div class="col-xs-12 col-md-5">
+				<div class="card soft">
+					<h3>Item Review</h3>
+					<div class="card-section">
+						<?php
+							echo array_reduce($cart,function($r,$o) {
+							$totalfixed = number_format($o->total,2,'.','');
+							return $r."<div class='display-flex'>
+							<div class='flex-stretch'>$o->name</div>
+							<div class='flex-none'>&dollar;$totalfixed</div>
+							</div>";
+							})
+						?>
+					</div>
+					<?= cartTotals(); ?>
+				</div>
+			</div>
+
 	<div class="container">
-		<div class="card soft">		
-			<h2>Product Checkout</h2>
+		<div class="card soft table">		
+			<h3>Product Checkout</h3>
 
 			<form class="form">
-				<h3>Address</h3>
+				<h4>Address</h4>
 				<div class="form-control">
 					<label for="address-street" class="form-label">Street</label>
 					<input id="address-street" type="text" placeholder="Street Name" class="form-input">
@@ -53,7 +77,7 @@ include_once "lib/php/functions.php";
 					</div>
 				</div>
 
-				<h3>Payment</h3>
+				<h4>Payment</h4>
 				<div class="form-control">
 					<label for="payment-name" class="form-label">Full Name</label>
 					<input id="payment-name" type="text" placeholder="Name" class="form-input">
@@ -84,6 +108,21 @@ include_once "lib/php/functions.php";
 			</form>
 		</div>
 	</div>
+</div>
+</div>
+	
+
+
+
+
+
+
+
+
+
+
+
+
 
 </body>
 </html>

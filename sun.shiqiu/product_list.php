@@ -31,7 +31,7 @@ include_once "parts/templates.php";
 			
 	<div class="form-control">
 			<div class="card soft">
-				<div class="display-flex">
+				<div class="display-flex flex-wrap">
 					<div class="display-flex flex-stretch">
 					     <div class="flex-none">
 						    <button data-filter="category" data-value="" type="button" class="form-button button-stretch">All</button>
