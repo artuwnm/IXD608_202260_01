@@ -1,2 +1,1 @@
-# IXD608_202260_01
-Summer IXD608 class
+# wnm608

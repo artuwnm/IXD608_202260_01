@@ -1,0 +1,39 @@
+[
+	{
+		"name":"Jinyeong Kim",
+		"type":"Student",
+		"email":"jkim318@art.edu",
+		"classes":[608]
+	},
+	{
+		"name":"Haily Jui",
+		"type":"Student",
+		"email":"1234@art.edu",
+		"classes":[608, 508]
+	},
+	{
+		"name":"Bing ing",
+		"type":"Actor",
+		"email":"5678@art.edu",
+		"classes":[601, 607, 728]
+	},
+	{
+		"name":"None1",
+		"type":"Student",
+		"email":"asdf@art.edu",
+		"classes":[608, 505, 705]
+	},
+	{
+		"name":"None2",
+		"type":"Student",
+		"email":"zxcv@art.edu",
+		"classes":[608]
+	},
+	{
+		"name":"None3",
+		"type":"Student",
+		"email":"zxcv@art.edu",
+		"classes":[608, 702]
+	}
+
+]
