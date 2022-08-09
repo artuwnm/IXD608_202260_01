@@ -1,0 +1,77 @@
+.join-btn {
+	margin: 30px auto;
+	width: 350px;
+	height: 50px;
+	border: 0.5px solid #000;
+	border-radius: 8px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 20px;
+	display: block;
+	cursor: pointer;
+	color: black;
+	background-color: transparent;
+}
+
+.join-btn:hover {
+	background-color: orangered;
+	color: white;
+	transition-duration: 0.3s;
+	border: none;
+}
+
+.title {
+	text-align: center;
+	margin-top: 50px;
+}
+
+footer {
+	text-align: center;
+}
+
+
+.grid.gap {
+	margin-bottom: 40px;
+}
+
+/*让产品名称与价格在一行*/
+.name {
+	display: inline-block;
+}
+.price {
+	float: right;
+}
+
+/*调整详情页面按钮位置*/
+.btn1 {
+	position: absolute;
+	bottom: 20px;
+}
+.btn2 {
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+}
+
+.back-btn {
+	width: 200px;
+	height: 50px;
+	border: 0.5px solid #eee;
+	border-radius: 8px;
+	font-size: 18px;
+	cursor: pointer;
+}
+.cart-btn {
+	width: 200px;
+	height: 50px;
+	border: 0.5px solid #007aff;
+	border-radius: 8px;
+	background-color: #007aff;
+	font-size: 18px;
+	color: white;
+	cursor: pointer;
+}
+
+/*.form-select {
+	top: 400px;
+}*/
