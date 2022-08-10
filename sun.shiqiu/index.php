@@ -18,6 +18,7 @@ include_once "parts/templates.php";
 
 
 </head>
+<body class="flush">
 <body style ="background-color:#edf2fb;">
 
 	<!-- header>h1+p -->
