@@ -14,7 +14,7 @@
 		<div class="card soft">
 			<h2>About Us</h2>
 			<p>This summer let beer and drink with you！</p>
-			<p>We're pretty cool!</p>
+			<p>Let's cheers!</p>
 		</div>
 	</div>
 	
