@@ -21,7 +21,7 @@ include_once "lib/php/functions.php";
 						<span>Cart</span>
 						<span class="badge"><?= makeCartBadge(); ?></span>
 					</a></li>
-					<li><a href="product_checkout.php">Checkout</a></li>
+					<li><a href="about.php">About</a></li>
 				</ul>
 			</nav>
 		</div>
