@@ -1,0 +1,38 @@
+[
+	{
+		"name":"Botong Zhao",
+		"type":"Student",
+		"email":"bzhao10@art.edu",
+		"classes":[666,777,888,999]
+	},
+	{
+		"name":"Botong Zhao1",
+		"type":"Student",
+		"email":"bzhao10@art.edu",
+		"classes":[666,777,888]
+	},
+	{
+		"name":"Botong Zhao2",
+		"type":"Student",
+		"email":"bzhao10@art.edu",
+		"classes":[666,777]
+	},
+	{
+		"name":"Botong Zhao3",
+		"type":"Student",
+		"email":"bzhao10@art.edu",
+		"classes":[666,777,999]
+	},
+	{
+		"name":"Botong Zhao4",
+		"type":"Student",
+		"email":"bzhao10@art.edu",
+		"classes":[111,222]
+	},
+	{
+		"name":"Botong Zhao5",
+		"type":"Student",
+		"email":"bzhao10@art.edu",
+		"classes":[608,608]
+	}
+]
